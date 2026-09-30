@@ -1,0 +1,336 @@
+{
+  "model_a": [
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 11,
+      "repeat": 1,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 23.523,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.95, \"reason\": \"Пароль был изменен, что указывает на возможное взлом или небезопасность системы. Следующая массовая рассылка писем с ссылками может быть признаком фишинга.\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 11,
+      "repeat": 2,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 16.479,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.95, \"reason\": \"Пароль был сменен, что указывает на возможную атаку или вмешательство. Следующая массовая рассылка писем со ссылками может быть признаком фишинга.\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 11,
+      "repeat": 3,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 13.981,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.95, \"reason\": \"Случайно смененный пароль привел к массовой рассылке писем, что может указывать на небезопасность аккаунта.\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 21,
+      "repeat": 1,
+      "expected": "suspicious",
+      "predicted": "normal",
+      "format_ok": true,
+      "latency_s": 18.442,
+      "raw": "{\"label\": \"normal\", \"confidence\": 0.95, \"reason\": \"Пользователь обычно входил в систему в более раннее время, но не было обнаружено неблагополучных признаков.\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 21,
+      "repeat": 2,
+      "expected": "suspicious",
+      "predicted": "normal",
+      "format_ok": true,
+      "latency_s": 13.578,
+      "raw": "{\"label\": \"normal\", \"confidence\": 0.9, \"reason\": \"Пользователь обычно входил в систему в рабочее время, но несмотря на это время, он использовал корректный пароль и устройства, которые он часто использует.\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 21,
+      "repeat": 3,
+      "expected": "suspicious",
+      "predicted": "normal",
+      "format_ok": true,
+      "latency_s": 15.027,
+      "raw": "{\"label\": \"normal\", \"confidence\": 0.95, \"reason\": \"Пользователь обычно входил в систему в рабочее время, но необычно рано. Однако он использовал корректный пароль и устройство, что указывает на его личность.\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 24,
+      "repeat": 1,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 19.779,
+      "raw": "{\"label\":\"suspicious\",\"confidence\":0.9,\"reason\":\"Пользовательский аккаунт, используемый для взаимодействия с сервисом, обычно используется в автоматизированных или системных контекстах и не должен использоваться для личного доступа.\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 24,
+      "repeat": 2,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 9.869,
+      "raw": "{\"label\":\"suspicious\",\"confidence\":0.9,\"reason\":\"Служебные учетные записи обычно используются для автоматизации задач и не требуют интерактивного доступа.\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 24,
+      "repeat": 3,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 8.225,
+      "raw": "{\"label\":\"suspicious\",\"confidence\":0.9,\"reason\":\"使用服务帐户进行人类交互通常与恶意活动相关，如数据泄露或身份盗窃。\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 27,
+      "repeat": 1,
+      "expected": "normal",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 16.262,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.9, \"reason\": \"多个城市之间的频繁登录通常与异常活动有关，如网络钓鱼、恶意软件或身份盗用。\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 27,
+      "repeat": 2,
+      "expected": "normal",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 11.11,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.9, \"reason\": \"Событие необычное и может быть связано с возможными попытками взлома или фишингом.\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 27,
+      "repeat": 3,
+      "expected": "normal",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 13.924,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.9, \"reason\": \"Событие необычное и может быть связано с возможной сменой мобильного оператора или попыткой проникновения в систему через несколько вышек.\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 30,
+      "repeat": 1,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 17.447,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.9, \"reason\": \"Пользователь использует устройства, которые он не обычно использует для входа в систему.\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 30,
+      "repeat": 2,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 13.752,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.95, \"reason\": \"Пользователь использует валидные учетные данные, но при этом его браузер не соответствует ни одному ранее использовавшемуся устройству этого пользователя.\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 30,
+      "repeat": 3,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 15.341,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.95, \"reason\": \"Пользователь использует валидные учетные данные, но его устройство (браузер) не соответствует ни одному из ранее использовавшихся устройств этого пользователя.\"}",
+      "error": null
+    }
+  ],
+  "model_b": [
+    {
+      "model": "llama3.2:1b",
+      "id": 11,
+      "repeat": 1,
+      "expected": "suspicious",
+      "predicted": "parse_error",
+      "format_ok": false,
+      "latency_s": 6.485,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.8, \"reason\": \"Аккаунт с обычного IP, скорее всего, был подвержен атаке на insecure account creation (создание аккаунта без надлежащего учетной пары).\"}}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 11,
+      "repeat": 2,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 3.445,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.8, \"reason\": \"Парольเปลновался в одно и то же время как вход occurred via common IP address, indicating a potential phishing attack.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 11,
+      "repeat": 3,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 6.069,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.8, \"reason\": \"Обратите внимание на то, что событие не было описано в detailах, а также нет никаких указаний на то, что это был уникальный случай или что это было сделано для личной выгоды.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 21,
+      "repeat": 1,
+      "expected": "suspicious",
+      "predicted": "normal",
+      "format_ok": true,
+      "latency_s": 4.448,
+      "raw": "{\"label\": \"normal\", \"confidence\": 0.2, \"reason\": \"Время входа в систему не типичное для обычных пользователей.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 21,
+      "repeat": 2,
+      "expected": "suspicious",
+      "predicted": "normal",
+      "format_ok": true,
+      "latency_s": 3.798,
+      "raw": "{\"label\": \"normal\", \"confidence\": 0.2, \"reason\": \"Время входа в систему неtypичное для нормального использования, но все остальные факторы отсутствуют.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 21,
+      "repeat": 3,
+      "expected": "suspicious",
+      "predicted": "normal",
+      "format_ok": true,
+      "latency_s": 3.373,
+      "raw": "{\"label\": \"normal\", \"confidence\": 0.5, \"reason\": \"Пользователь вошел в систему в обычное время, что не Typical для его использования device.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 24,
+      "repeat": 1,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 6.49,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.8, \"reason\": \"Предполагается, что сервисный аккаунт для интерактива человека использовался для доступа к системе, что может быть нарушением конфиденциальности и безопасности.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 24,
+      "repeat": 2,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 5.047,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.8, \"reason\": \"Поскольку это использование сервисного аккаунта для доступа к информации, а не для личных целей, это может быть нарушением конфиденциальности и безопасности.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 24,
+      "repeat": 3,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 4.938,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.8, \"reason\": \"Предполагается, что сервисный аккаунт для взаимодействия с пользователем использовался для облегчения доступа к информации, но это не подтверждено.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 27,
+      "repeat": 1,
+      "expected": "normal",
+      "predicted": "normal",
+      "format_ok": true,
+      "latency_s": 5.576,
+      "raw": "{\"label\": \"normal\", \"confidence\": 0.5, \"reason\": \"Поскольку клиент использовал два разных города одной страны и один и тот же час, это может быть неоднозначным событием.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 27,
+      "repeat": 2,
+      "expected": "normal",
+      "predicted": "normal",
+      "format_ok": true,
+      "latency_s": 3.851,
+      "raw": "{\"label\": \"normal\", \"confidence\": 0.8, \"reason\": \"Клиент использовал два разных города и один и тот же номер оператора, что и на предыдущий вход.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 27,
+      "repeat": 3,
+      "expected": "normal",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 4.521,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.8, \"reason\": \"Сообщение от клиента о входе из двух разных городов одной страны, что не является обычным поведением для одного и того же аккаунта.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 30,
+      "repeat": 1,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 4.084,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.8, \"reason\": \"Неправильный user-agent\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 30,
+      "repeat": 2,
+      "expected": "suspicious",
+      "predicted": "parse_error",
+      "format_ok": false,
+      "latency_s": 2.307,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.8, \"reason\": \"Неправильный user-agent\"",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 30,
+      "repeat": 3,
+      "expected": "suspicious",
+      "predicted": "suspicious",
+      "format_ok": true,
+      "latency_s": 2.284,
+      "raw": "{\"label\": \"suspicious\", \"confidence\": 0.8, \"reason\": \"Неправильный user-agent\"}",
+      "error": null
+    }
+  ]
+}

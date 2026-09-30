@@ -1,0 +1,16 @@
+{
+  "qwen2.5:1.5b": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "format_compliance": 1.0
+  },
+  "llama3.2:1b": {
+    "accuracy": 0.9,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "format_compliance": 0.9
+  }
+}

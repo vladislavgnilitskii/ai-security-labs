@@ -1,0 +1,226 @@
+{
+  "model_a": [
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 1,
+      "input": "Отличное приложение, всё работает быстро и стабильно, рекомендую!",
+      "expected": "positive",
+      "predicted": "positive",
+      "format_ok": true,
+      "latency_s": 8.514,
+      "raw": "{\"label\":\"positive\",\"confidence\":1,\"reason\":\"所有评论都是一致的正面评价。\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 2,
+      "input": "Ужасно медленно грузится, постоянно вылетает, удаляю.",
+      "expected": "negative",
+      "predicted": "negative",
+      "format_ok": true,
+      "latency_s": 9.682,
+      "raw": "{\"label\":\"negative\",\"confidence\":0.98,\"reason\":\"文本中的所有词都表达了负面情绪。\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 3,
+      "input": "Спасибо разработчикам, новая версия исправила все баги, которые меня раздражали.",
+      "expected": "positive",
+      "predicted": "positive",
+      "format_ok": true,
+      "latency_s": 13.729,
+      "raw": "{\"label\":\"positive\",\"confidence\":0.98,\"reason\":\"文本中表达了对新版本的满意和感谢，提到了解决问题（bug）的改进。\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 4,
+      "input": "Деньги списали, а подписку не активировали, поддержка не отвечает уже неделю.",
+      "expected": "negative",
+      "predicted": "negative",
+      "format_ok": true,
+      "latency_s": 12.984,
+      "raw": "{\"label\":\"negative\",\"confidence\":1,\"reason\":\"客户对产品或服务的体验非常不满意，包括资金问题、功能未激活以及客服响应时间过长。\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 5,
+      "input": "Интерфейс красивый и понятный, разобралась за пять минут.",
+      "expected": "positive",
+      "predicted": "positive",
+      "format_ok": true,
+      "latency_s": 9.337,
+      "raw": "{\"label\":\"positive\",\"confidence\":0.9,\"reason\":\"所有句子都表达了正面的评价。\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 6,
+      "input": "После обновления пропали все мои сохранённые данные, очень разочарован.",
+      "expected": "negative",
+      "predicted": "negative",
+      "format_ok": true,
+      "latency_s": 9.622,
+      "raw": "{\"label\":\"negative\",\"confidence\":0.98,\"reason\":\"文本表达了失望和不满的情绪。\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 7,
+      "input": "Неплохо, но не хватает тёмной темы и синхронизации между устройствами.",
+      "expected": "negative",
+      "predicted": "negative",
+      "format_ok": true,
+      "latency_s": 13.58,
+      "raw": "{\"label\":\"negative\",\"confidence\":0.9,\"reason\":\"Отзыв содержит отрицательные элементы: 'не хватает', 'не понравилось'.\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 8,
+      "input": "Пользуюсь уже год, ни одной серьёзной проблемы, всё устраивает.",
+      "expected": "positive",
+      "predicted": "positive",
+      "format_ok": true,
+      "latency_s": 6.723,
+      "raw": "{\"label\":\"positive\",\"confidence\":1,\"reason\":\"\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 9,
+      "input": "Цена завышена для того функционала, который реально есть в приложении.",
+      "expected": "negative",
+      "predicted": "negative",
+      "format_ok": true,
+      "latency_s": 8.848,
+      "raw": "{\"label\":\"negative\",\"confidence\":1,\"reason\":\"客户对价格和功能的不满足。\"}",
+      "error": null
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "id": 10,
+      "input": "Служба поддержки оперативно решила мою проблему в течение часа, очень доволен.",
+      "expected": "positive",
+      "predicted": "positive",
+      "format_ok": true,
+      "latency_s": 12.213,
+      "raw": "{\"label\":\"positive\",\"confidence\":1,\"reason\":\"The customer is expressing satisfaction with the quick resolution of their problem and is very positive about it.\"}",
+      "error": null
+    }
+  ],
+  "model_b": [
+    {
+      "model": "llama3.2:1b",
+      "id": 1,
+      "input": "Отличное приложение, всё работает быстро и стабильно, рекомендую!",
+      "expected": "positive",
+      "predicted": "positive",
+      "format_ok": true,
+      "latency_s": 3.308,
+      "raw": "{\"label\": \"positive\", \"confidence\": 1.0, \"reason\": \"Работает быстро и стабильно.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 2,
+      "input": "Ужасно медленно грузится, постоянно вылетает, удаляю.",
+      "expected": "negative",
+      "predicted": "negative",
+      "format_ok": true,
+      "latency_s": 3.252,
+      "raw": "{\"label\": \"negative\", \"confidence\": 1.0, \"reason\": \"неправильная конфигурация или проблема с настройками\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 3,
+      "input": "Спасибо разработчикам, новая версия исправила все баги, которые меня раздражали.",
+      "expected": "positive",
+      "predicted": "parse_error",
+      "format_ok": false,
+      "latency_s": 2.911,
+      "raw": "{\"label\": \"positive\", \"confidence\": 1.0, \"reason\": \"Правильный ответ: \"",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 4,
+      "input": "Деньги списали, а подписку не активировали, поддержка не отвечает уже неделю.",
+      "expected": "negative",
+      "predicted": "negative",
+      "format_ok": true,
+      "latency_s": 4.835,
+      "raw": "{\"label\": \"negative\", \"confidence\": 0.8, \"reason\": \"Потому что отзыв содержит выражение «подписку не активирована», что является значимым фактором для отзыва.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 5,
+      "input": "Интерфейс красивый и понятный, разобралась за пять минут.",
+      "expected": "positive",
+      "predicted": "positive",
+      "format_ok": true,
+      "latency_s": 3.394,
+      "raw": "{\"label\": \"positive\", \"confidence\": 1.0, \"reason\": \"Понятно, что interface đẹp и удобен для использования.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 6,
+      "input": "После обновления пропали все мои сохранённые данные, очень разочарован.",
+      "expected": "negative",
+      "predicted": "negative",
+      "format_ok": true,
+      "latency_s": 3.019,
+      "raw": "```json\n{\"label\": \"negative\", \"confidence\": 1.0, \"reason\": \"Обновление данных\"}\n```",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 7,
+      "input": "Неплохо, но не хватает тёмной темы и синхронизации между устройствами.",
+      "expected": "negative",
+      "predicted": "negative",
+      "format_ok": true,
+      "latency_s": 5.043,
+      "raw": "{\"label\": \"negative\", \"confidence\": 0.8, \"reason\": \"Потеря приложения в магазине, где он был доступен до 6 месяцев назад, и не получилось найти его на других площадях.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 8,
+      "input": "Пользуюсь уже год, ни одной серьёзной проблемы, всё устраивает.",
+      "expected": "positive",
+      "predicted": "positive",
+      "format_ok": true,
+      "latency_s": 4.384,
+      "raw": "{\"label\": \"positive\", \"confidence\": 1.0, \"reason\": \"потому что вы неоднократно подчеркиваете, что everything устраивает и не имеете проблем с anythingом.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 9,
+      "input": "Цена завышена для того функционала, который реально есть в приложении.",
+      "expected": "negative",
+      "predicted": "negative",
+      "format_ok": true,
+      "latency_s": 4.249,
+      "raw": "{\"label\": \"negative\", \"confidence\": 0.8, \"reason\": \"Цена завышена для того функционала, который реально есть в приложении.\"}",
+      "error": null
+    },
+    {
+      "model": "llama3.2:1b",
+      "id": 10,
+      "input": "Служба поддержки оперативно решила мою проблему в течение часа, очень доволен.",
+      "expected": "positive",
+      "predicted": "positive",
+      "format_ok": true,
+      "latency_s": 3.986,
+      "raw": "{\"label\": \"positive\", \"confidence\": 1.0, \"reason\": \"خدمа поддержки оперативно решила проблему в течение часа, очень доволен.\"}",
+      "error": null
+    }
+  ]
+}

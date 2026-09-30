@@ -1,0 +1,82 @@
+[
+  {
+    "judged_model": "qwen2.5:1.5b",
+    "id": 1,
+    "judged_answer": "{\"label\":\"normal\",\"confidence\":0.9,\"reason\":\"Пользователь попытался ввести неправильные данные, но затем успешно залогинился через несколько минут, что не является поводом для сомнительного поведения.\"}",
+    "judge_raw": "{\"factual_correctness\": 1, \"completeness\": 2, \"instruction_following\": 1, \"relevance\": 2, \"comment\": \"\"}",
+    "latency_s": 60.158,
+    "error": null
+  },
+  {
+    "judged_model": "qwen2.5:1.5b",
+    "id": 2,
+    "judged_answer": "{\"label\": \"suspicious\", \"confidence\": 1.0, \"reason\": \"频繁的无效登录尝试和账户被封锁，通常与网络钓鱼、恶意软件或自动化工具攻击有关。\"}",
+    "judge_raw": "{\"factual_correctness\": 2, \"completeness\": 2, \"instruction_following\": 2, \"relevance\": 2, \"comment\": \"\"}",
+    "latency_s": 25.658,
+    "error": null
+  },
+  {
+    "judged_model": "qwen2.5:1.5b",
+    "id": 3,
+    "judged_answer": "{\"label\": \"normal\", \"confidence\": 0.99, \"reason\": \"Пользователь входил в систему по привычному пути и времени.\"}",
+    "judge_raw": "{\"factual_correctness\": 1, \"completeness\": 2, \"instruction_following\": 1, \"relevance\": 1, \"comment\": \"\"}",
+    "latency_s": 18.205,
+    "error": null
+  },
+  {
+    "judged_model": "qwen2.5:1.5b",
+    "id": 4,
+    "judged_answer": "{\"label\":\"suspicious\",\"confidence\":0.9,\"reason\":\"Пользователь из странного региона попытался войти в учетную запись администратора, что может указывать на угрозу безопасности.\"}",
+    "judge_raw": "{\"factual_correctness\": 1, \"completeness\": 2, \"instruction_following\": 0, \"relevance\": 1, \"comment\": \"Обоснование соответствует событию и содержит существенные признаки. Однако формат JSON не включает поля 'label', 'confidence', 'reason'.\"}",
+    "latency_s": 25.732,
+    "error": null
+  },
+  {
+    "judged_model": "qwen2.5:1.5b",
+    "id": 5,
+    "judged_answer": "{\"label\": \"normal\", \"confidence\": 1.0, \"reason\": \"Резервное копирование базы данных обычно выполняется по расписанию для обеспечения надежности и доступности данных.\"}",
+    "judge_raw": "{\"factual_correctness\": 2, \"completeness\": 2, \"instruction_following\": 2, \"relevance\": 2, \"comment\": \"\"}",
+    "latency_s": 20.691,
+    "error": null
+  },
+  {
+    "judged_model": "llama3.2:1b",
+    "id": 1,
+    "judged_answer": "{\"label\": \"suspicious\", \"confidence\": 0.8, \"reason\": \"Предполагаемый шаблон атак: один вход с обычного IP, затем.successful entry через минуту.\"}",
+    "judge_raw": "{\"factual_correctness\": 1, \"completeness\": 2, \"instruction_following\": 1, \"relevance\": 2, \"comment\": \"\"}",
+    "latency_s": 20.983,
+    "error": null
+  },
+  {
+    "judged_model": "llama3.2:1b",
+    "id": 2,
+    "judged_answer": "{\"label\": \"suspicious\", \"confidence\": 0.8, \"reason\": \"Время и количество попыток входа в систему одинаково, что может указывать на кибератаку.\"}",
+    "judge_raw": "{\"factual_correctness\": 1, \"completeness\": 2, \"instruction_following\": 1, \"relevance\": 1, \"comment\": \"Обоснование соответствует событию и опирается на существенные признаки. Время и количество попыток входа в систему одинаково, что указывает на кибератаку.\"}",
+    "latency_s": 31.804,
+    "error": null
+  },
+  {
+    "judged_model": "llama3.2:1b",
+    "id": 3,
+    "judged_answer": "{\"label\": \"normal\", \"confidence\": 0.2, \"reason\": \"Поскольку сотрудник вошел в систему в обычное время и без bấtозначных изменений, его入ение может быть рассматриваться как нормальным\"}",
+    "judge_raw": "{\"factual_correctness\": 1, \"completeness\": 1, \"instruction_following\": 1, \"relevance\": 1, \"comment\": \"Обоснование соответствует событию и не содержит выдуманных фактов или посторонних тем.\"}",
+    "latency_s": 27.355,
+    "error": null
+  },
+  {
+    "judged_model": "llama3.2:1b",
+    "id": 4,
+    "judged_answer": "{\"label\": \"suspicious\", \"confidence\": 0.8, \"reason\": \"Сотрудник never present in country of entry.\"}",
+    "judge_raw": "{\"factual_correctness\": 1, \"completeness\": 2, \"instruction_following\": 1, \"relevance\": 1, \"comment\": \"Обоснование соответствует событию и содержит необходимые факты. Однако не полностью опирается на существенный признак события.\"}",
+    "latency_s": 23.472,
+    "error": null
+  },
+  {
+    "judged_model": "llama3.2:1b",
+    "id": 5,
+    "judged_answer": "{\"label\": \"normal\", \"confidence\": 0.2, \"reason\": \"Планированный и оправданный процесс.\"}",
+    "judge_raw": "{\"factual_correctness\": 1, \"completeness\": 1, \"instruction_following\": 1, \"relevance\": 1, \"comment\": \"\"}",
+    "latency_s": 18.694,
+    "error": null
+  }
+]

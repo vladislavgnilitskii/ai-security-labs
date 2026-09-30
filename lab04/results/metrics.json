@@ -1,0 +1,56 @@
+{
+  "qwen2.5:1.5b": {
+    "accuracy": 0.8,
+    "precision": 0.75,
+    "recall": 0.8571428571428571,
+    "f1": 0.8,
+    "format_compliance": 1.0,
+    "confusion_matrix": [
+      [
+        12,
+        4,
+        0
+      ],
+      [
+        2,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "latency_mean": 18.366100000000003,
+    "latency_median": 17.5255,
+    "latency_p95": 25.7216
+  },
+  "llama3.2:1b": {
+    "accuracy": 0.5666666666666667,
+    "precision": 0.5217391304347826,
+    "recall": 0.8571428571428571,
+    "f1": 0.6486486486486487,
+    "format_compliance": 1.0,
+    "confusion_matrix": [
+      [
+        5,
+        11,
+        0
+      ],
+      [
+        2,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "latency_mean": 5.2002999999999995,
+    "latency_median": 4.9985,
+    "latency_p95": 6.620849999999999
+  }
+}
