@@ -1,0 +1,6 @@
+{
+  "model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "dimension": 384,
+  "num_fragments": 40,
+  "build_time_s": 0.329
+}

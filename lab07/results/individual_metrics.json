@@ -1,0 +1,14 @@
+{
+  "semantic": {
+    "precision_at_3": 0.458,
+    "recall_at_3": 0.875,
+    "mrr": 0.875,
+    "avg_latency_ms": 19.114
+  },
+  "keyword": {
+    "precision_at_3": 0.458,
+    "recall_at_3": 0.854,
+    "mrr": 0.938,
+    "avg_latency_ms": 0.864
+  }
+}

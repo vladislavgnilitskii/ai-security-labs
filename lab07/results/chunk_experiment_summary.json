@@ -1,0 +1,14 @@
+{
+  "A_small (400/50)": {
+    "num_chunks": 18,
+    "avg_chunk_len": 347.9,
+    "top1_hit_rate": 0.625,
+    "top3_hit_rate": 0.875
+  },
+  "B_large (1000/100)": {
+    "num_chunks": 8,
+    "avg_chunk_len": 745.4,
+    "top1_hit_rate": 0.5,
+    "top3_hit_rate": 0.875
+  }
+}
