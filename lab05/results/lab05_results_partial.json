@@ -1,0 +1,128 @@
+{
+  "test_prompts": [
+    {
+      "id": 1,
+      "type": "Фактологический",
+      "prompt": "Объясни в 5 предложениях разницу между хэшированием и шифрованием.",
+      "answer": "Хэш-суммирующее процесс преобразует входной данные (например, текстовый документ или фото) в уникальный цифровой фрагмент - хеш. Хеш позволяет быстро проверить подлинность данных без необходимости оригинала. Шифрование сопряжено с зашифровкой и дешифровкой данных; обрабатывает входные данные, изменяя их структуру, но оставляя их содержимое инкогнито (пространство шифрования) или открытым для чтения. Шифрование часто используется для обеспечения безопасности и защиты данных.",
+      "latency_s": 45.862,
+      "tokens_per_s": 3.44,
+      "error": null
+    },
+    {
+      "id": 2,
+      "type": "Суммаризация",
+      "prompt": "Суммаризируй следующий текст в 3 пунктах: «Система обнаружения вторжений (IDS) анализирует сетевой трафик и системные журналы для выявления признаков атак. Сигнатурные IDS сравнивают трафик с базой известных шаблонов атак и быстро работают, но не видят новых угроз. Поведенческие IDS строят профиль нормального поведения и сообщают об отклонениях.»",
+      "answer": "1. Системы обнаружения вторжений (IDS) анализируют сетевой трафик и журналы систем, чтобы определить признаки атак.\n2. Сигнатурные IDS работают быстро и сравнивают трафик с базой известных шаблонов, но не видят новых угроз.\n3. Поведенческие IDS строят профиль нормального поведения и сообщают об отклонениях от этого статуса.",
+      "latency_s": 61.198,
+      "tokens_per_s": 2.96,
+      "error": null
+    },
+    {
+      "id": 3,
+      "type": "Классификация",
+      "prompt": "Определи категорию события: «пять неуспешных входов, затем успешный вход с нового IP». Ответ: норма / подозрительно / инцидент и краткое объяснение.",
+      "answer": "Категория: Инцидент.\n\nОбъяснение: Этот событие можно рассматривать как подозрительное или нестандартное, особенно если в предыдущих пяти входах использовался один и тот же IP-адрес. Если новый IP был успешно принят на вход после этих пяти неудачных попыток, это может указывать на уязвимость системы безопасности или возможность незначительного хакерского атаки.",
+      "latency_s": 29.411,
+      "tokens_per_s": 5.07,
+      "error": null
+    },
+    {
+      "id": 4,
+      "type": "Структурированный ответ",
+      "prompt": "Верни JSON с полями risk_level, reason, recommended_action для события: «пять неуспешных входов, затем успешный вход с нового IP».",
+      "answer": "Конечно! Вот пример JSON с соответствующими полями:\n\n```json\n{\n  \"risk_level\": \"High\",\n  \"reason\": \"Five failed login attempts followed by a successful login from a new IP address.\",\n  \"recommended_action\": \"Immediately verify the security measures in place, investigate any potential unauthorized access attempts, and update security configurations as needed.\"\n}\n```\n\nВ этом примере:\n- `risk_level` оценивается как \"High\", указывая на серьезные угрозы.\n- `reason` объясняет события в деталях, которые могут потребовать немедленного внимания безопасности.\n- `recommended_action` предлагает конкретные шаги для предотвращения подобных ситуаций и обеспечения безопасности.",
+      "latency_s": 38.983,
+      "tokens_per_s": 4.99,
+      "error": null
+    },
+    {
+      "id": 5,
+      "type": "Код",
+      "prompt": "Напиши функцию Python, проверяющую, содержит ли строка IPv4-адрес.",
+      "answer": null,
+      "latency_s": null,
+      "tokens_per_s": null,
+      "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=90)"
+    }
+  ],
+  "performance": [
+    {
+      "run": 1,
+      "is_first": true,
+      "latency_s": null,
+      "output_tokens": null,
+      "tokens_per_s": null,
+      "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=90)"
+    },
+    {
+      "run": 2,
+      "is_first": false,
+      "latency_s": null,
+      "output_tokens": null,
+      "tokens_per_s": null,
+      "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=90)"
+    },
+    {
+      "run": 3,
+      "is_first": false,
+      "latency_s": null,
+      "output_tokens": null,
+      "tokens_per_s": null,
+      "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=90)"
+    },
+    {
+      "run": 4,
+      "is_first": false,
+      "latency_s": null,
+      "output_tokens": null,
+      "tokens_per_s": null,
+      "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=90)"
+    },
+    {
+      "run": 5,
+      "is_first": false,
+      "latency_s": null,
+      "output_tokens": null,
+      "tokens_per_s": null,
+      "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=90)"
+    }
+  ],
+  "resources": {
+    "before": {
+      "cpu_percent": 3.0,
+      "ram_used_gb": 10.57,
+      "ram_percent": 70.7,
+      "vram_gb": "нет (дискретный GPU отсутствует, встроенная AMD Radeon не используется Ollama)",
+      "gpu_percent": "нет"
+    },
+    "during_generation": {
+      "cpu_percent_max": 79.0,
+      "ram_used_gb_max": 10.62,
+      "samples_count": 99,
+      "generation_latency_s": 78.871,
+      "error": null
+    },
+    "note": "Модель могла быть уже загружена в память из предыдущих заданий — чистый baseline «до загрузки» недоступен в рамках одного запуска скрипта."
+  },
+  "temperature": {
+    "низкая": {
+      "temperature": 0.1,
+      "answer": "1. \"LogAnalyzer\" - это универсальный инструмент, который позволяет быстро анализировать и отслеживать логи сервера или приложений для выявления угроз и проблем безопасности.\n\n2. \"SecurityMonitor\" - это комплексный инструмент, который автоматически следит за всеми входящими и выходящими запросами на вашем сервере, чтобы предотвратить любые потенциальные угрозы.\n\n3. \"SecureGuardian\" - это мощное решение для защиты данных и обеспечения безопасности в реальном времени, которое автоматически обнаруживает и отлавливает любые потенциальные угрозы на вашем сервере или приложении.",
+      "latency_s": 62.815,
+      "error": null
+    },
+    "средняя": {
+      "temperature": 0.7,
+      "answer": "1. \"SecLogAnalyzer\"\n   Слово \"security\" (безопасность) включает понятие \"логирование\", что подчеркивает, что это инструмент предназначен для анализа логов информационной безопасности.\n\n2. \"SecurityLogger\"\n   Использование слова \"logger\" (запись) в данном контексте демонстрирует его роль как программы для записи событий, связанных с信息安全ом.\n\n3. \"InfoSecAnalyzer\"\n   В этом варианте сочетание \"infosec\" (информационная безопасность) и \"analyst\" (аналитик) четко указывает на то, что инструмент предназначен для анализа логов безопасности информации.",
+      "latency_s": 57.073,
+      "error": null
+    },
+    "высокая": {
+      "temperature": 1.3,
+      "answer": null,
+      "latency_s": null,
+      "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=90)"
+    }
+  }
+}

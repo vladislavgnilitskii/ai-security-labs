@@ -1,0 +1,12 @@
+{
+  "before": {
+    "cpu_percent": 0.8,
+    "ram_used_gb": 10.81,
+    "ram_percent": 72.3
+  },
+  "during_or_after": {
+    "cpu_percent": 19.8,
+    "ram_used_gb": 10.88,
+    "ram_percent": 72.8
+  }
+}
